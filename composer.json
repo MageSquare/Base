@@ -17,5 +17,5 @@
             "MageSquare\\Base\\": "1.12.5"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
