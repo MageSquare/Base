@@ -17,5 +17,6 @@
             "MageSquare\\Base\\": ""
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "prefer-stable": true 
 }
