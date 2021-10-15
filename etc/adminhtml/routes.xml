@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author MageSquare Team
+ * @copyright Copyright (c) 2021 MageSquare 
+ * @package MageSquare_Base
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="msbase" frontName="msbase">
+            <module name="MageSquare_Base"/>
+        </route>
+    </router>
+</config>

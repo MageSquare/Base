@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author MageSquare Team
+ * @copyright Copyright (c) 2021 MageSquare 
+ * @package MageSquare_Base
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="layout_render_before">
+        <observer name="MageSquare_Base::add_theme_class_name" instance="MageSquare\Base\Observer\AddBodyClassName" />
+    </event>
+</config>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author MageSquare Team
+ * @copyright Copyright (c) 2021 MageSquare 
+ * @package MageSquare_Base
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Page\Config\Renderer">
+        <plugin name="MageSquare_Base::add-css" type="MageSquare\Base\Plugin\Frontend\AddAssets" />
+    </type>
+    <!-- add plugin to return empty string when block output is empty -->
+    <type name="Magento\Catalog\Block\Product\AbstractProduct">
+        <plugin name="returnEmptyStringWhenOutputEmpty"
+                type="MageSquare\Base\Plugin\SetEmptyStringIfOutputEmpty"
+                sortOrder="10"
+                disabled="false"/>
+    </type>
+
+    <!-- font preload support in Magento < 2.3.3 -->
+    <type name="Magento\Framework\View\Page\Config\Renderer">
+        <plugin name="addMissingAssetAttributes"
+                type="MageSquare\Base\Plugin\PageConfigRenderer"
+                sortOrder="10"
+                disabled="false"/>
+    </type>
+</config>

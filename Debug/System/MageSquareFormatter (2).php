@@ -1,0 +1,25 @@
+<?php
+/**
+ * @author MageSquare Team
+ * @copyright Copyright (c) 2021 MageSquare 
+ * @package MageSquare_Base
+ */
+
+
+namespace MageSquare\Base\Debug\System;
+
+class MageSquareFormatter extends \Monolog\Formatter\LineFormatter
+{
+    /**
+     * @param array $record
+     *
+     * @return string
+     */
+    public function format(array $record)
+    {
+        $output = $this->format;
+        $output = str_replace('%datetime%', date('H:i d/m/Y'), $output);
+        $output = str_replace('%message%', $record['message'], $output);
+        return $output;
+    }
+}

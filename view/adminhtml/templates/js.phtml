@@ -1,0 +1,22 @@
+<?php
+/**
+ * @author MageSquare Team
+ * @copyright Copyright (c) 2021 MageSquare 
+ * @package MageSquare_Base
+ */
+?>
+<?php
+/**
+ * @var \Magento\Backend\Block\Template $block
+ */
+?>
+<script>
+    require([
+        "jquery"
+    ], function($){
+        $(document).ready(function () {
+            $('a[href*="https://magesquare.com"], a[href*="http://magesquare.com"], a[href*="https://marketplace.magento.com"]')
+                .attr('target', '_blank');
+        });
+    });
+</script>

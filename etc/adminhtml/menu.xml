@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author MageSquare Team
+ * @copyright Copyright (c) 2021 MageSquare 
+ * @package MageSquare_Base
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MenuMageSquare_Base::menu"
+             title="MageSquare"
+             module="MageSquare_Base"
+             translate="title"
+             sortOrder="69"
+             resource="MenuMageSquare_Base::menu"/>
+        <add id="MageSquare_Base::marketplace"
+             title="MageSquare Marketplace"
+             module="MageSquare_Base"
+             translate="title"
+             sortOrder="9999"
+             action="msbase/marketplace"
+             parent="MenuMageSquare_Base::menu"
+             resource="MageSquare_Base::marketplace"/>
+        <!-- <add id="MageSquare_Base::extensions"
+             title="Modules &amp; Notifications"
+             module="MageSquare_Base"
+             translate="title"
+             sortOrder="9998"
+             action="adminhtml/system_config/edit/section/magesquare_base"
+             parent="MenuMageSquare_Base::menu"
+             resource="MageSquare_Base::config"/> -->
+    </menu>
+</config>

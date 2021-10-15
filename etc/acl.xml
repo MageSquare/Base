@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author MageSquare Team
+ * @copyright Copyright (c) 2021 MageSquare 
+ * @package MageSquare_Base
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin" title="MageSquare Extensions">
+                <resource id="MenuMageSquare_Base::menu" title="MageSquare Extensions" translate="title" sortOrder="79">
+                    <resource id="MageSquare_Base::marketplace" title="MageSquare Marketplace" translate="title" sortOrder="1"/>
+                </resource>
+
+                <resource id="Magento_Backend::stores" title="MageSquare Extensions">
+                    <resource id="Magento_Backend::stores_settings" title="MageSquare">
+                        <resource id="Magento_Config::config" title="MageSquare Config">
+                            <resource id="MageSquare_Base::config"
+                                      title="MageSquare - Extensions Information"
+                                      sortOrder="110" />
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

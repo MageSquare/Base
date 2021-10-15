@@ -1,0 +1,177 @@
+.config-nav-block.magesquare-tab strong:before {
+    background: url(../images/MageSqure.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    content: '';
+    display: inline-block;
+    margin-right: 12px;
+    vertical-align: bottom;
+    background-size: 16px;
+}
+
+.admin__menu [data-ui-id^="menu-magesquare-"] .submenu-group-title span:before,
+.admin__menu [data-ui-id^="menu-magento-"] [data-ui-id^="menu-magento-"] [data-ui-id^="menu-magesquare-"] span:before {
+    background: url(../images/MageSqure.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    content: '';
+    display: inline-block;
+    margin-right: 12px;
+    vertical-align: top;
+    background-size: 25px;
+}
+
+#magesquare_base_extensions table td.value,
+#magesquare_base_information table td.value {
+    vertical-align: bottom;
+}
+
+.msbase-grid-message {
+    padding-left: 58px;
+    min-height: 53px;
+    background: url(../images/MageSqure.png) no-repeat;
+}
+
+.msbase-grid-message.magesquare-grid-logo {
+    background: url(../images/MageSqure.png) no-repeat;
+}
+
+.admin__action-dropdown-menu .notifications-entry:not(.notifications-entry-last) {
+    padding-left: 37px;
+    background: url(../images/MageSqure.png) no-repeat 5px 7px;
+}
+
+.admin__action-dropdown-menu .notifications-entry[data-msbase-logo="1"] {
+    background: url(../images/MageSqure.png) no-repeat 5px 7px;
+}
+
+/* main magesquare menu start*/
+#menu-menumagesquare-base-menu .submenu .level-0 > a:before,
+#menu-menumagesquare-base-menu .level-0:first-child > a:after {
+    content: '';
+    display: none;
+}
+
+#menu-menumagesquare-base-menu .submenu .level-1,
+#menu-menumagesquare-base-menu .submenu .level-0 {
+    margin-right: 15px;
+}
+
+#menu-menumagesquare-base-menu .submenu .level-0._show > a {
+    color: #fff;
+    font-weight: 700;
+}
+
+#menu-menumagesquare-base-menu .submenu .level-1 > a:hover {
+    background-color: #524d49;
+    color: #fff;
+}
+
+#menu-menumagesquare-base-menu .submenu .level-1 > a,
+#menu-menumagesquare-base-menu .submenu .level-0 > a {
+    display: block;
+    margin: .7rem 0;
+    padding: 1rem 1.5rem;
+    min-height: 0;
+    width: 99%;
+    color: #a79d95;
+    text-align: left;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#menu-menumagesquare-base-menu .submenu .level-1 {
+    margin-left: 0;
+}
+
+.item-extensions a,
+.item-marketplace a {
+    color: #fff!important;
+    font-weight: 600!important;
+}
+
+#menu-menumagesquare-base-menu .submenu .column {
+    min-width: 22rem;
+}
+
+#menu-menumagesquare-base-menu .submenu > #nav,
+#menu-menumagesquare-base-menu .submenu .column > ul {
+    overflow-y: auto;
+    margin-right: 15px;
+    max-height: 720px;
+    scrollbar-color: #a79d95;
+    scrollbar-width: thin;
+}
+
+#menu-menumagesquare-base-menu .submenu > #nav::-webkit-scrollbar,
+#menu-menumagesquare-base-menu .submenu .column > ul::-webkit-scrollbar {
+    width: 3px;
+}
+
+#menu-menumagesquare-base-menu .submenu > #nav::-webkit-scrollbar-track,
+#menu-menumagesquare-base-menu .submenu .column > ul::-webkit-scrollbar-track {
+    width: 3px;
+    background: #a79d95;
+}
+
+#menu-menumagesquare-base-menu .submenu > #nav::-webkit-scrollbar-thumb,
+#menu-menumagesquare-base-menu .submenu .column > ul::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: #fff;
+}
+
+#menu-menumagesquare-base-menu .submenu .level-0 > a:hover {
+    background-color: #524d49;
+}
+
+#menu-menumagesquare-base-menu .submenu .column .parent {
+    margin-bottom: 0;
+}
+
+#menu-menumagesquare-base-menu .submenu .parent {
+    margin-bottom: 0.5rem;
+}
+
+#menu-menumagesquare-base-menu .item-container .submenu {
+    transform: none;
+    opacity: 0;
+    transition-property: opacity;
+}
+
+#menu-menumagesquare-base-menu .item-container._show .submenu {
+    opacity: 1;
+}
+
+#menu-menumagesquare-base-menu > a:before {
+    content: '';
+    background:  url(../images/MageSqure.png) no-repeat center;
+    background-size: contain;
+}
+
+#menu-menumagesquare-base-menu > a:hover:before,
+#menu-menumagesquare-base-menu._show > a:before {
+    background: url(../images/MageSqure.png) no-repeat center;
+    background-size: contain;
+}
+
+.admin__menu .level-0#menu-menumagesquare-base-menu > .submenu > ul[role='menubar'] {
+    min-height: 720px;
+}
+
+.admin__menu .level-0#menu-menumagesquare-base-menu .submenu > ul[role='menu'] {
+    min-height: inherit;
+}
+
+.admin__menu .level-0 > .submenu .submenu {
+    min-width: 253px;
+    min-height: 100%;
+}
+
+.admin__menu .submenu .submenu .submenu-title {
+    margin-left: 18px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 130%;
+}
+/* main magesquare menu end*/

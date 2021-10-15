@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author MageSquare Team
+ * @copyright Copyright (c) 2021 MageSquare 
+ * @package MageSquare_Base
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\AdminNotification\Block\Grid\Renderer\Actions">
+        <plugin name="MageSquare_Base::show-unsubscribe-link" type="MageSquare\Base\Plugin\AdminNotification\Block\Grid\Renderer\Actions"/>
+    </type>
+
+    <type name="Magento\AdminNotification\Block\Grid\Renderer\Notice">
+        <plugin name="MageSquare_Base::add-magesquare-class" type="MageSquare\Base\Plugin\AdminNotification\Block\Grid\Renderer\Notice"/>
+    </type>
+
+    <type name="Magento\AdminNotification\Block\ToolbarEntry">
+        <plugin name="MageSquare_Base::add-magesquare-class-logo" type="MageSquare\Base\Plugin\AdminNotification\Block\ToolbarEntry"/>
+    </type>
+
+    <type name="Magento\ImportExport\Controller\Adminhtml\Import\Download">
+        <arguments>
+            <argument name="componentRegistrar" xsi:type="object">MageSquare\Base\Component\ComponentRegistrar</argument>
+        </arguments>
+    </type>
+
+    <type name="Magento\Config\Block\System\Config\Form\Field">
+        <plugin name="MageSquare_Base::replace-image-path" type="MageSquare\Base\Plugin\Config\Block\System\Config\Form\Field"/>
+    </type>
+
+    <type name="Magento\Backend\Block\Widget\Form\Element\Dependence">
+        <plugin name="MageSquare_Base::fix-dependence" type="MageSquare\Base\Plugin\Adminhtml\Block\Widget\Form\Element\Dependence"/>
+    </type>
+
+    <type name="Magento\Backend\Block\Menu">
+        <plugin name="MageSquare_Base:menu" type="MageSquare\Base\Plugin\Backend\Block\Menu"/>
+    </type>
+
+    <type name="Magento\Backend\Model\Menu\Item">
+        <plugin name="MageSquare_Base:correct-market-url" type="MageSquare\Base\Plugin\Backend\Model\Menu\Item"/>
+    </type>
+
+    <type name="Magento\Backend\Model\Menu\Builder">
+        <plugin name="MageSquare_Base::menu_builder" type="MageSquare\Base\Plugin\Backend\Model\Menu\Builder"/>
+    </type>
+
+    <type name="Magento\Config\Model\Config\Structure">
+        <plugin name="MageSquare_Base:advertise" type="MageSquare\Base\Plugin\Backend\Model\Config\StructurePlugin"/>
+    </type>
+</config>

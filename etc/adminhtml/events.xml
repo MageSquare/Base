@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author MageSquare Team
+ * @copyright Copyright (c) 2021 MageSquare 
+ * @package MageSquare_Base
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="magesquare_base_add_information_content">
+        <observer name="magesquare_base_add_information_content" instance="MageSquare\Base\Observer\GenerateInformationTab"/>
+    </event>
+
+    <event name="controller_action_predispatch">
+        <observer name="magesquare_base_admin_notification"
+                  instance="MageSquare\Base\Observer\PreDispatchAdminActionController" />
+    </event>
+
+    <event name="admin_system_config_save">
+        <observer name="magesquare_base_config_save" instance="MageSquare\Base\Observer\SaveConfig"/>
+    </event>
+</config>

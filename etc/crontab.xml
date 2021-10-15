@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author MageSquare Team
+ * @copyright Copyright (c) 2021 MageSquare 
+ * @package MageSquare_Base
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="magesquare_base">
+        <job name="msbase_feeds_refresh" instance="MageSquare\Base\Cron\RefreshFeedData" method="execute">
+            <schedule>0 * * * *</schedule>
+        </job>
+    </group>
+</config>
