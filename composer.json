@@ -14,7 +14,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "MageSquare\\Base\\": "1.12.5"
+            "MageSquare\\Base\\": ""
         }
     },
     "minimum-stability": "stable"
