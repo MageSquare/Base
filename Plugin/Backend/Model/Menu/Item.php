@@ -18,7 +18,7 @@ class Item
 
     const SEO_PARAMS = '?utm_source=extension&utm_medium=backend&utm_campaign=main_menu_to_user_guide';
 
-    const MARKET_URL = 'http://hub.printerhub.in/all-product.html';
+    const MARKET_URL = 'https://test.magesquare.com/all-product.html';
 
     const MAGENTO_MARKET_URL = 'https://marketplace.magento.com/partner/MageSquare';
 

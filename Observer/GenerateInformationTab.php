@@ -114,7 +114,7 @@ class GenerateInformationTab implements ObserverInterface
         if ($this->moduleInfoProvider->isOriginMarketplace()) {
             $href = Item::MAGENTO_MARKET_URL;
         } else {
-            $href = 'http://hub.printerhub.in' . $this->getSeoParams() . 'magesquare_logo_' . $this->getModuleCode();
+            $href = 'https://test.magesquare.com' . $this->getSeoParams() . 'magesquare_logo_' . $this->getModuleCode();
         }
 
         $html = '<a target="_blank" href="' . $href . '"><img class="magesquare-logo" src="' . $src . '"/></a>';
